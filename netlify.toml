@@ -1,0 +1,4 @@
+[build]
+  # CI=false stops Create React App from treating ESLint warnings as build errors
+  command = "CI=false npm run build"
+  publish = "build"

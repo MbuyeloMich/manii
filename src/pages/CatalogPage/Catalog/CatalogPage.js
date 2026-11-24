@@ -1,5 +1,4 @@
 import React from "react";
-import ChunkLoading from "../../../components/ui/messages/ChunkLoading/ChunkLoading";
 import PageTransition from "../../../components/PageTransition/PageTransition";
 import { useParams } from "react-router-dom";
 const CatalogSections = React.lazy(() => import("./CatalogSections"));

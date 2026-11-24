@@ -18,7 +18,7 @@ export default function Pagination({ pagesCount, scrollElem }) {
             <li
               style={{ pointerEvents: el !== "..." ? "all" : "none" }}
               className={
-                activePage == el && el !== "..." ? "active" : "inactive"
+                activePage === el && el !== "..." ? "active" : "inactive"
               }
               onClick={() => handlePagination(el)}
               key={i}

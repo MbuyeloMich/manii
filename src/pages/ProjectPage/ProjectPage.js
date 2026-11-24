@@ -1,6 +1,5 @@
 import React from "react";
 import PageTransition from "../../components/PageTransition/PageTransition";
-import ChunkLoading from "../../components/ui/messages/ChunkLoading/ChunkLoading";
 const ProjectSections = React.lazy(() => import("./ProjectSections"));
 function ProjectPage() {
   return (
