@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom';
 import Article from './Article';
 import FilterItem from './FilterItem';
 export default function FilterGrid({ data }) {

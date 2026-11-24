@@ -4,7 +4,6 @@ import useSWRImmutable from 'swr/immutable';
 import { Link } from 'react-router-dom'
 import { useSearchParams } from 'react-router-dom';
 import { getReviewsCount } from '../../../db/loadData';
-import FetchError from '../../ui/messages/FetchError';
 import Pagination from '../../ui/Pagination/Pagination';
 import useFilter from '../../../hooks/useFilter';
 import ReviewsDisplay from './ReviewsDisplay';
