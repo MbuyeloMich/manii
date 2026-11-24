@@ -13,7 +13,7 @@ export default function SearchInput() {
                 spellCheck={false}
                 id='search'
                  type='search'
-                placeholder='Что будем искать?'
+                placeholder="What are you looking for?"
                 onBlur={() => setBlur(false)}
                 onFocus={() => setBlur(true)}
             />

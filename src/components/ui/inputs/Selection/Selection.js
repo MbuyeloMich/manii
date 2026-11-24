@@ -1,5 +1,6 @@
 import React, { useState } from "react";
  import arrow from "../../../../assets/icons/arrow-up.svg";
+import { translateCatalogLabel } from "../../../../data/catalogEnglish";
 
 export default function Selection({ name, defaultValue, data }) {
   const [value, setValue] = useState(defaultValue ?? data[0]);
@@ -26,13 +27,15 @@ export default function Selection({ name, defaultValue, data }) {
         }}
       ></div>
       <span className="xsmall-text text-main text-black-secondary">
-        {el.colorName}
+        {translateCatalogLabel(el.colorName)}
       </span>
     </div>
   );
 
   const renderTextOption = (el) => (
-    <span className="xsmall-text text-main text-black-secondary">{el}</span>
+    <span className="xsmall-text text-main text-black-secondary">
+      {translateCatalogLabel(el)}
+    </span>
   );
 
   return (
@@ -47,7 +50,7 @@ export default function Selection({ name, defaultValue, data }) {
             renderColorOption(value)
           ) : (
             <span className="option-key xsmall-text text-main text-black-secondary">
-              {value}
+              {translateCatalogLabel(value)}
             </span>
           )}
           <img

@@ -9,8 +9,8 @@ function ReviewsSections() {
         id="reviews-intro"
         posY={"70%"}
    
-          headline="отзывы"
-          description="Мнение наших клиентов очень важно для нас"
+          headline="Reviews"
+          description="Our customers' feedback is important to us"
   
       />
    <Reviews/>

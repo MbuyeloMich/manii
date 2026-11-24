@@ -71,7 +71,7 @@ export default function CartIcon() {
         className="added-item"
       >
         <span className="xsmall-text text-main text-light up-case">
-          Товар успешно добавлен <br /> в {isAdded ? 'корзину' : 'избранное'} !
+          Item added successfully <br /> to {isAdded ? 'your cart' : 'your favorites'}!
         </span>
 
       </Portal>

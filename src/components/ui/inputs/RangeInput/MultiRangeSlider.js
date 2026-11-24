@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState, useRef, useContext } from "react";
  import useFilter from "../../../../hooks/useFilter";
 import { MainContext } from "../../../../context/MainContext";
+import { formatZar } from "../../../../utils/currency";
 
 const MultiRangeSlider = ({ min, max, val, filterParam }) => {
  
@@ -39,9 +40,17 @@ const MultiRangeSlider = ({ min, max, val, filterParam }) => {
     <div className="range-input"
 >
       <div className="values row s-between gap-5 xxxsmall-text center-y">
-        <div className="slider-left-value center-gr">{minVal.toLocaleString('ru-RU')} {val}</div>
+        <div className="slider-left-value center-gr">
+          {filterParam === "price"
+            ? formatZar(minVal)
+            : `${minVal.toLocaleString("en-US")} ${val}`}
+        </div>
         <span>—</span>
-        <div className="slider-right-valu center-gr">{maxVal.toLocaleString('ru-RU')} {val}</div>
+        <div className="slider-right-valu center-gr">
+          {filterParam === "price"
+            ? formatZar(maxVal)
+            : `${maxVal.toLocaleString("en-US")} ${val}`}
+        </div>
       </div>
       <input
         type="range"

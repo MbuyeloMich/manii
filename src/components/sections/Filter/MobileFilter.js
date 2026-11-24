@@ -6,7 +6,7 @@ export default function MobileFilter({  showMobileParams, setShowMobileParams })
       <Portal root={'modal-root'} className='filter-params' value={showMobileParams}>
           <div className='row s-between center-y'>
               <span className='text-heading text-black'>
-                  фильтры
+                  Filters
               </span>
               <div className='menu-bars active' onClick={() => setShowMobileParams(false)}>
                   <div></div>

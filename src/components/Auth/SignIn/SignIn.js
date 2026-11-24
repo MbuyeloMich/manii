@@ -8,15 +8,15 @@ import CloseButton from "../CloseButton";
     <FormWrapper formkey={"signinForm"}>
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
-          войти
+          Sign in
         </span>
       </div>
       <Input type="email" placeholder="E-mail*" name="email" />
-      <Input type="password" placeholder="Пароль" name="password" />
-      <AnimButton type="submit">войти</AnimButton>
+      <Input type="password" placeholder="Password" name="password" />
+      <AnimButton type="submit">Sign in</AnimButton>
       <p className="xxxsmall-text text-main text-gray">
-        У вас еще нет профиля?{" "}
-        <span onClick={() => setAuth("sign-up")}>Зарегистрироваться</span>
+        Don't have an account yet?{" "}
+        <span onClick={() => setAuth("sign-up")}>Create an account</span>
       </p>
       <CloseButton setAuth={setAuth} />
     </FormWrapper>

@@ -39,7 +39,7 @@ const navigate = useNavigate()
                                     <span className='xxsmall-text text-main text-black up-case'>{el.title}</span>
                                     <span className='xxxsmall-text text-main'>{el.subtitle}</span>
                                     <AnimButton onClick={()=> navigate('/catalog/decor')}>
-                                        посмотреть
+                                        Explore
                                     </AnimButton>
                                 </div>
                             </div>

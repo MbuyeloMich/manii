@@ -5,7 +5,7 @@ export default function ReviewItem({ el }) {
     return (
         <div className='review-item text-main'>
             <span className='small-text text-black'>{el.name}</span>
-            <span className='xxsmall-text text-gray'>верифицирован</span>
+            <span className='xxsmall-text text-gray'>Verified</span>
             <div className='row wrap gap-20 s-between center-y'>
                 <div className='reviews-stars row gap-5'>
                     {Array(5).fill(null).map((star, i) => {

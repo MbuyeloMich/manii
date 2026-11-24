@@ -5,20 +5,24 @@ import "./params.css";
 import { useParams } from "react-router-dom";
 import catalog from "../../../../data/catalog";
 import ExtraFilter from "../FilterBy/ExtraFilter";
+import {
+  getCatalogEnglish,
+  translateCatalogLabel,
+} from "../../../../data/catalogEnglish";
 export default function FilterParams() {
   const { catalog: path } = useParams();
 
   return (
     <>
-      <FilterByDescription headline={catalog[path].filterHeadline} />
+      <FilterByDescription headline={getCatalogEnglish(path).filterHeadline} />
       <ExtraFilter
         filterParam={"collection"}
-        headline={"коллекции"}
+        headline={"Collections"}
         data={catalog[path].collections}
       />
       <ExtraFilter
         filterParam={"material"}
-        headline={"материал"}
+        headline={"Material"}
         data={catalog[path].materials}
       />
       {catalog[path].filters.map(([key, val, param], i) => {
@@ -29,7 +33,7 @@ export default function FilterParams() {
             min={val.min}
             val={val.val}
             max={val.max}
-            headline={key}
+            headline={translateCatalogLabel(key)}
           />
         );
       })}

@@ -7,7 +7,7 @@ export default function OrderSections() {
     
         <>
             <Order setIsBought={setIsBought}/>
-            {isBoight && <MoreProducts headline={"продолжить покупки"} />} 
+            {isBoight && <MoreProducts headline={"Continue shopping"} />}
         </>
     )
 }

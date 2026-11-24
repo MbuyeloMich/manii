@@ -7,7 +7,7 @@ export default function TechnicalSpecifications({ content }) {
     return (
         <div className='row center-y gap-35 wrap s-between'>
             <div>
-                <span className="xxsmall-text text-main text-black-secondary up-case">размеры:</span>
+                <span className="xxsmall-text text-main text-black-secondary up-case">Dimensions:</span>
                 <ul className="sizes xsmall-text text-main text-black-secondary">
                     {Object.entries(content.sizes).map(([key, value], i) => (
                         <li key={i}>
@@ -17,7 +17,7 @@ export default function TechnicalSpecifications({ content }) {
                         </li>
                     ))}
                 </ul>
-                <span className="xxsmall-text text-main text-black-secondary up-case">материалы:</span>
+                <span className="xxsmall-text text-main text-black-secondary up-case">Materials:</span>
                 <ul className="materials xsmall-text text-main text-black-secondary">
                     {Object.entries(content.materials).map(([key, value], i) => (
                         <li key={i}>

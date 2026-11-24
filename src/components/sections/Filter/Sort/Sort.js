@@ -33,14 +33,14 @@ export default function Sort() {
     return (
         <div className="sorting row gap-5 center-y" onClick={() => setOpen((prev) => !prev)}>
             <img src={sortIcon} alt="sort" />
-            <span>Сортировка</span>
+            <span>Sort by</span>
             <AnimatePresence mode="wait">
                 {open && (
                     <SmoothAppearance className="sorting-params column gap-15 xsmall-text text-main text-black" blur={true}>
                         {Object.entries({
-                            popularity: 'Популярность',
-                            descending: 'Цена: наименьшая',
-                            ascending: 'Цена: наибольшая',
+                            popularity: 'Popularity',
+                            descending: 'Price: low to high',
+                            ascending: 'Price: high to low',
                         }).map(([key, label]) => (
                             <div key={key}>
                                 <span

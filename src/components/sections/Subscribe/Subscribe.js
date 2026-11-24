@@ -14,12 +14,12 @@ export default function Subscribe() {
         <div className="row center-y">
           <div className="text-wrapper">
             <AnimatedText
-              text={"подпишитесь на нашу рассылку"}
+              text={"Subscribe to our newsletter"}
               as={"small-heading"}
               canter={false}
             />
             <p className="small-text text-main text-black up-case">
-              получайте <b>скидки</b> и супер предложения
+              Get <b>discounts</b> and special offers
             </p>
             <FormWrapper
               formkey="subscribeForm">
@@ -27,10 +27,10 @@ export default function Subscribe() {
                 <Input
                   type="email"
                   name="email"
-                  placeholder="Введите свой адрес электронной почты"
+                  placeholder="Enter your email address"
                 />
                 <AnimButton type="submit">
-                  <img src={mailIcon} alt="mail" /> ПОДПИСАТЬСЯ
+                  <img src={mailIcon} alt="mail" /> SUBSCRIBE
                 </AnimButton>
               </div>
             </FormWrapper>

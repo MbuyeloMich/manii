@@ -73,8 +73,7 @@ export const userCartStore = create(
           .products.reduce(
             (total, product) => total + product.price * product.quantity,
             0
-          )
-          .toLocaleString("ru-RU");
+          );
       },
     }),
     {

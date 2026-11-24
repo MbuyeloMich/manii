@@ -3,7 +3,7 @@ export default function ArticleCareRules({ careRules }) {
     <>
       <div style={{ "--area": "f" }}>
         <span className="xsmall-text text-main text-black-secondary up-case">
-          10 правил по уходу за мебелью
+          10 furniture care tips
         </span>
       </div>
       <ol

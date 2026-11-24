@@ -5,15 +5,15 @@ export default function ProductsList({ getImages }) {
      const [category, setCategory] = useState('chairs')
 
     const data = [
-        ['диваны', 'sofas'],
-        ['кровати', 'beds'],
-        ['кресла', 'armchairs'],
-        ['стулья', 'chairs'],
-        ['пуфы и банкетки', 'poufs'],
-        ['бескаркасная мебель', 'unframed'],
-        ['уличная мебель', 'outdoor'],
-        ['постельное белье', 'bedding'],
-        ['декор', 'decor'], ['шторы', 'curtains']
+        ['Sofas', 'sofas'],
+        ['Beds', 'beds'],
+        ['Armchairs', 'armchairs'],
+        ['Chairs', 'chairs'],
+        ['Poufs and benches', 'poufs'],
+        ['Frameless furniture', 'unframed'],
+        ['Outdoor furniture', 'outdoor'],
+        ['Bedding', 'bedding'],
+        ['Decor', 'decor'], ['Curtains', 'curtains']
     ];
 
  

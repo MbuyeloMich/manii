@@ -7,24 +7,22 @@ export default function ProjectForm({ includeUpload = false, id }) {
      return (
         <div className="form-container">
             <p className="xsmall-text text-main text-black text-center up-case">
-                Если у вас, как у дизайнера, уже есть готовый проект и вы ищете
-                возможность его реализации, обратитесь к нам, заполнив форму
-                обратной связи
+                Are you a designer with a project ready to bring to life? Get in touch using the form below.
             </p>
              <FormWrapper formkey={`projectForm ${id}`}>
                 <div className="row gap-15">
                     <div className="column gap-10">
-                        <Input type="text" placeholder="Имя" name="name" />
-                        <Input type="tel" placeholder="Телефон" name="phone" />
-                        <Input type="email" placeholder="Почта" name="email" />
+                        <Input type="text" placeholder="Name" name="name" />
+                        <Input type="tel" placeholder="Phone" name="phone" />
+                        <Input type="email" placeholder="Email" name="email" />
                     </div>
                     <div className="column gap-10">
-                        {includeUpload && <Upload text="Загрузить проект*" />}
-                        <Input tag={"textarea"} placeholder="Сообщение" name="message"/>
+                        {includeUpload && <Upload text="Upload your project*" />}
+                        <Input tag={"textarea"} placeholder="Message" name="message"/>
                     </div>
                 </div>
                 <AnimButton type="submit">
-                    <img src={mailIcon} alt="mail" /> отправить
+                    <img src={mailIcon} alt="mail" /> Send
                 </AnimButton>
             </FormWrapper>
         </div>

@@ -2,6 +2,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AddToFav from "../../ui/buttons/AddToFav/AddToFav";
 import { Link } from "react-router-dom";
+import { formatZar } from "../../../utils/currency";
 export default function Slide({ el }) {
   return (
     <Link to={`/catalog/${el.id.split('_')[1]}/${el.name.toLowerCase()}?id=${el.id}`}>
@@ -29,7 +30,7 @@ export default function Slide({ el }) {
           {el.name}
         </span>
         <span className="xxxsmall-text  text-main text-black">
-          {el.price.toLocaleString("ru-RU")} руб.
+          {formatZar(el.price)}
         </span>
       </div>
     </Link>

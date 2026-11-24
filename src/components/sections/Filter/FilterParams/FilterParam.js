@@ -1,5 +1,6 @@
 import useFilter from "../../../../hooks/useFilter";
 import Checkbox from "../../../ui/inputs/Checkbox/Checkbox";
+import { translateCatalogLabel } from "../../../../data/catalogEnglish";
 export default function FilterParam({
     filterParam,
     data,
@@ -19,7 +20,7 @@ export default function FilterParam({
                             // id={el}
                             value={el}
                         />
-                        <span>{el}</span>
+                        <span>{translateCatalogLabel(el)}</span>
                     </li>
                 );
             })}

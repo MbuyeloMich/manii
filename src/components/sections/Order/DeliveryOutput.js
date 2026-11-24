@@ -10,7 +10,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
       <div className="row center-y s-between wrap gap-10">
         <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
-            <b> Контакт</b>
+            <b> Contact</b>
           </span>
           <span className="xsmall-text text-main text-black">
             {formData.email}
@@ -20,13 +20,13 @@ export default function DeliveryOutput({ setActiveTab, children }) {
           className="edit xxsmall-text text-main text-gray"
           onClick={() => setActiveTab("information")}
         >
-          изменить
+          Edit
         </span>
       </div>
       <div className="row center-y s-between wrap gap-10">
         <div className="row center-y wrap gap-10">
           <span className="xxsmall-text text-main text-black-secondary up-case">
-            <b>адрес</b>
+            <b>Address</b>
           </span>
           <span className="xsmall-text text-main text-black">
             {formData.street} {formData.homeAddress}, {formData.index},{" "}
@@ -37,7 +37,7 @@ export default function DeliveryOutput({ setActiveTab, children }) {
           className="edit xxsmall-text text-main text-gray"
           onClick={() => setActiveTab("information")}
         >
-          изменить
+          Edit
         </span>
       </div>
       {children}

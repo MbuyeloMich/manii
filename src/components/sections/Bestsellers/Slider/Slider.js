@@ -10,16 +10,16 @@ import InfiniteSlider from '../../../InfiniteSlider/InfiniteSlider';
 
 export default function Slider() {
     const initialItems = [
-        { name: "Лампа Pompidou", image: img1 },
-        { name: "Кресло Lounge", image: img2 },
-        { name: "Кровать Foster", image: img3 },
-        { name: "Свечи Foster", image: img4 },
-        { name: "Диван Foster", image: img5 },
-        { name: "Лампа Pompidou", image: img1 },
-        { name: "Кресло Lounge", image: img2 },
-        { name: "Кровать Foster", image: img3 },
-        { name: "Свечи Foster", image: img4 },
-        { name: "Диван Foster", image: img5 },
+        { name: "Pompidou Lamp", image: img1 },
+        { name: "Lounge Chair", image: img2 },
+        { name: "Foster Bed", image: img3 },
+        { name: "Foster Candles", image: img4 },
+        { name: "Foster Sofa", image: img5 },
+        { name: "Pompidou Lamp", image: img1 },
+        { name: "Lounge Chair", image: img2 },
+        { name: "Foster Bed", image: img3 },
+        { name: "Foster Candles", image: img4 },
+        { name: "Foster Sofa", image: img5 },
     ]
 
 
@@ -30,10 +30,10 @@ export default function Slider() {
                 itemWidth={'bestsellers-slider-img-width'}
             wrapper={Slide}>
                 <div className='heading-wrapper'>
-                    <h1 className='text-center'>Бестселлеры</h1>
+                    <h1 className='text-center'>Bestsellers</h1>
                 </div>
                 <div className='learn-mone row gap-15' >
-                    <span className='text-main xsmall-text text-black-secondary up-case'>смотреть больше</span>
+                    <span className='text-main xsmall-text text-black-secondary up-case'>View more</span>
                     <img src={arrow} alt='image-left' style={{ width: '25px' }} />
                 </div>
             </InfiniteSlider>

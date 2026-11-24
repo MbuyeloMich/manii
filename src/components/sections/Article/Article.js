@@ -25,9 +25,9 @@ export default function Article() {
     <section id="news-article">
       <div className="container">
         <div className="row wrap center-y gap-10 xxxsmall-text text-main text-gray up-case">
-          <Link to={"/"}>Главная</Link>
+          <Link to={"/"}>Home</Link>
           <span>/</span>
-          <Link to={"/news"}>Новости</Link>
+          <Link to={"/news"}>News</Link>
           <span>/</span>
           <span className="text-black">{title.replaceAll("_", " ")}</span>
         </div>

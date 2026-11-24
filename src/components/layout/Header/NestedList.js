@@ -44,7 +44,7 @@ export default function NestedList({ menu, setMenu }) {
           to={"catalog"}
           className="row-inline center-y gap-10"
         >
-          каталог
+          Catalog
           <img
             className="arrow-up"
             style={{ transform: menu.nested ? "rotate(180deg)" : "none" }}
@@ -59,46 +59,46 @@ export default function NestedList({ menu, setMenu }) {
           <li>
             <ul>
               <li>
-                <NavLink to={"catalog/sofas"}>Диваны </NavLink>
+                <NavLink to={"catalog/sofas"}>Sofas </NavLink>
               </li>
               <li>
-                <NavLink to={"catalog/beds"}>Кровати </NavLink>
+                <NavLink to={"catalog/beds"}>Beds </NavLink>
               </li>
               <li>
-                <NavLink to={"catalog/poufs"}>Пуфы и банкетки </NavLink>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <NavLink to={"catalog/armchairs"}>Кресла </NavLink>
-              </li>
-              <li>
-                <NavLink to={"catalog/chairs"}>Стулья </NavLink>
+                <NavLink to={"catalog/poufs"}>Poufs and benches </NavLink>
               </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>
-                <NavLink to={"catalog/frameless"}>Бескаркасная мебель </NavLink>
+                <NavLink to={"catalog/armchairs"}>Armchairs </NavLink>
               </li>
               <li>
-                <NavLink to={"catalog/outdoor"}>Уличная мебель </NavLink>
-              </li>
-              <li>
-                <NavLink to={"catalog/bedsheets"}>Постельное белье </NavLink>
+                <NavLink to={"catalog/chairs"}>Chairs </NavLink>
               </li>
             </ul>
           </li>
           <li>
             <ul>
               <li>
-                <NavLink to={"catalog/decor"}>Декор</NavLink>
+                <NavLink to={"catalog/frameless"}>Frameless furniture </NavLink>
               </li>
               <li>
-                <NavLink to={"catalog/curtains"}>Шторы </NavLink>
+                <NavLink to={"catalog/outdoor"}>Outdoor furniture </NavLink>
+              </li>
+              <li>
+                <NavLink to={"catalog/bedsheets"}>Bedding </NavLink>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <NavLink to={"catalog/decor"}>Decor</NavLink>
+              </li>
+              <li>
+                <NavLink to={"catalog/curtains"}>Curtains </NavLink>
               </li>
             </ul>
           </li>

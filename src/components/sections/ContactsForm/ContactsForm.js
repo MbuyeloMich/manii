@@ -12,9 +12,9 @@ export default function ContactsForm() {
         <div className='row gap-50 center-y s-between'>
 
           <div className='text-wrapper'>
-            <AnimatedText text={'Бесплатный доступ к базе 3D-моделей'} as={'small-heading'} canter={false} />
+            <AnimatedText text={'Free access to the 3D model library'} as={'small-heading'} canter={false} />
             <p className='xsmall-text text-main text-black'>
-              В рамках партнерской программы для дизайнеров, мы сделали бесплатный доступ к базе 3D-моделей. Теперь вы можете просто заполнить анкету, и без проблем использовать готовые 3D-модели мебели Jamni в своих проектах!
+              As part of our designer partnership program, we offer free access to our 3D model library. Fill out the form to use Mani furniture models in your projects.
             </p>
             <Form />
           </div>

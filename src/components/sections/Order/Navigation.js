@@ -5,9 +5,9 @@ export default function Navigation({ activeTab }) {
     const { toggleCart, isCartOpen } = modalStore();
 
      const tabs = [
-        { id: 'information', label: 'информация' },
-        { id: 'delivery', label: 'доставка' },
-        { id: 'payment', label: 'оплата' },
+        { id: 'information', label: 'Information' },
+        { id: 'delivery', label: 'Delivery' },
+        { id: 'payment', label: 'Payment' },
     ];
 
      const getColor = (condition) => (condition ? 'var(--black)' : 'inherit');
@@ -18,7 +18,7 @@ export default function Navigation({ activeTab }) {
                 style={{ color: getColor(isCartOpen) }}
                 onClick={toggleCart}
             >
-                корзина
+                Cart
             </span>
 
              {tabs.map((tab) => (

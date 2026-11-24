@@ -16,7 +16,7 @@ const descriptors = [
                 left: '50%'
             },
             title: 'SIGNAL',
-            subtitle: 'столик',
+            subtitle: 'Side table',
             img: img3
         },
     ],
@@ -27,7 +27,7 @@ const descriptors = [
                 left: '25%'
             },
             title: 'Leisure Chair',
-            subtitle: 'Стул',
+            subtitle: 'Chair',
             img: img1
         },
         {
@@ -37,7 +37,7 @@ const descriptors = [
                 left: '50%'
             },
             title: 'QUERINI',
-            subtitle: 'стол',
+            subtitle: 'Table',
             img: img2
         },
     ],
@@ -48,7 +48,7 @@ const descriptors = [
                 left: '34%'
             },
             title: 'Maximie',
-            subtitle: 'Стул',
+            subtitle: 'Chair',
             img: img6
         },
         {
@@ -57,7 +57,7 @@ const descriptors = [
                 left: '50%'
             },
             title: 'Antiqued',
-            subtitle: 'стол',
+            subtitle: 'Table',
             img: img7
         },
         {
@@ -66,7 +66,7 @@ const descriptors = [
                 left: '80%'
             },
             title: 'diamond',
-            subtitle: 'лампа',
+            subtitle: 'Lamp',
             img: img8
         },
     ],
@@ -77,7 +77,7 @@ const descriptors = [
                 left: '50%'
             },
             title: 'Sonorous',
-            subtitle: 'столик',
+            subtitle: 'Side table',
             img: img5
         },
     ],
@@ -88,7 +88,7 @@ const descriptors = [
                 left: '50%'
             },
             title: 'Imai',
-            subtitle: 'столик',
+            subtitle: 'Side table',
             img: img4
         },
     ],

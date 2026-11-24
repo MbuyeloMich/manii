@@ -12,10 +12,10 @@ export default function DescriptionList({ data }) {
     };
  
     const sections = [
-        { key: 'technical', label: 'технические характеристики', content: data?.technicalSpecifications },
-        { key: 'maintenance', label: 'обслуживание', content: data?.maintenance },
-        { key: 'packing', label: 'упаковка', content: data?.packing },
-        { key: 'description', label: 'описание продукта', content: [data?.productDescription, data?.images, data?.advantages] },
+        { key: 'technical', label: 'Specifications', content: data?.technicalSpecifications },
+        { key: 'maintenance', label: 'Care', content: data?.maintenance },
+        { key: 'packing', label: 'Packaging', content: data?.packing },
+        { key: 'description', label: 'Product description', content: [data?.productDescription, data?.images, data?.advantages] },
     ];
 
     return (

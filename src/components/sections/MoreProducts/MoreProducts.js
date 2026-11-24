@@ -7,7 +7,7 @@ import SmoothAppearance from "../../ui/SmoothAppearance";
 import Slide from "./Slide";
 import { useParams, useSearchParams } from "react-router-dom";
 import useSWRImmutable from "swr/immutable";
-export default function MoreProducts({ headline = "еще товары" }) {
+export default function MoreProducts({ headline = "More products" }) {
   const randomCatalog = useMemo(
     () =>
       [
@@ -38,7 +38,7 @@ export default function MoreProducts({ headline = "еще товары" }) {
           <h2>{headline}</h2>
 
           <span className="small-text text-main text-black up-case">
-            вам может понравиться
+            You might also like
           </span>
         </div>
         <AnimatePresence mode="wait">

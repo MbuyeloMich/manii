@@ -22,11 +22,11 @@ export default function Form({ data }) {
         <Options options={options} colors={data.colors} />
       </div>
       <div className="submit-wrapper">
-        <MainButton type={"submit"}>добавить в корзину</MainButton>
+        <MainButton type={"submit"}>Add to cart</MainButton>
         <div className="row center-y center-x gap-10">
           <AddToFav data={data} formRef={formRef} />
           <span className="text-main xxsmall-text text-black-secondary">
-            В избранное
+            Add to favorites
           </span>
         </div>
       </div>

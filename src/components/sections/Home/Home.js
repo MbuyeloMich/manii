@@ -16,7 +16,7 @@ export default function Home() {
                         <span>{new Date().getFullYear()}</span>
                     </div>
                     <h3 className='text-center'>
-                        Изысканная <br /> мебель - оживляющая <br /> пространство
+                        Refined furniture <br /> that brings spaces <br /> to life
                     </h3>
                 </div>
             </div>

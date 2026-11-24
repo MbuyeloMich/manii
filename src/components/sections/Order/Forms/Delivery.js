@@ -20,7 +20,7 @@ export default function Delivery({ setActiveTab }) {
 
     const fd = new FormData(e.target);
     const formDataObject = {
-      deliveryType: fd.get("pickup") ? "delivery" : "pickup",
+      deliveryType: fd.get("pickup") ? "pickup" : "delivery",
     };
     if (validateFormData("deliveryForm", formDataObject)) {
       updateFormData("deliveryForm", formDataObject);
@@ -38,7 +38,7 @@ export default function Delivery({ setActiveTab }) {
         className="form-delivery"
       >
         <span className="text-main xsmall-text text-black-secondary up-case">
-          способ доставки
+          Delivery method
         </span>
         <div className="row center-y gap-10">
           <Checkbox
@@ -50,8 +50,7 @@ export default function Delivery({ setActiveTab }) {
             name="pickup"
             id="pickup"
           >
-            самовывоз (Москва, м. Ботанический сад, Сельскохозяйственная уд., д.
-            12А, стр. 6.)
+            Pick up (Sandton, Johannesburg, Gauteng, South Africa)
           </Checkbox>
         </div>
         <div className="row center-y gap-10">
@@ -64,11 +63,11 @@ export default function Delivery({ setActiveTab }) {
             name="delivery"
             id="delivery"
           >
-            курьер
+            Courier delivery
           </Checkbox>
         </div>
         <div className="line"></div>
-        <AnimButton type="submit">перейти к оплате</AnimButton>
+        <AnimButton type="submit">Continue to payment</AnimButton>
       </form>
       <div className="row center-x">
         <button
@@ -82,7 +81,7 @@ export default function Delivery({ setActiveTab }) {
           className="row center-y gap-15 xsmall-text text-main text-black"
         >
           <img src={arrowLeft} alt="arrow-left" />
-          Вернуться к информации
+          Back to information
         </button>
       </div>
     </SmoothAppearance>

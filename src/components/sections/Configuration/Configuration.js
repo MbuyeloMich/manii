@@ -11,13 +11,13 @@ import img6 from '../../../assets/config-6.jpg';
 import img7 from '../../../assets/config-7.jpg';
  
 const initialData = [
-  { type: "3 - модульный", price: 120000, quantity: 0, img: img1 },
-  { type: "2 - модульный", price: 80000, quantity: 0, img: img2 },
-  { type: "1 - модульный", price: 40000, quantity: 0, img: img3 },
-  { type: "угловой", price: 60000, quantity: 0, img: img4 },
-  { type: "левый", price: 50000, quantity: 0, img: img5 },
-  { type: "правый", price: 50000, quantity: 0, img: img6 },
-  { type: "пуф", price: 30000, quantity: 0, img: img7 },
+  { type: "3-piece modular", price: 120000, quantity: 0, img: img1 },
+  { type: "2-piece modular", price: 80000, quantity: 0, img: img2 },
+  { type: "1-piece modular", price: 40000, quantity: 0, img: img3 },
+  { type: "Corner section", price: 60000, quantity: 0, img: img4 },
+  { type: "Left section", price: 50000, quantity: 0, img: img5 },
+  { type: "Right section", price: 50000, quantity: 0, img: img6 },
+  { type: "Pouf", price: 30000, quantity: 0, img: img7 },
 ];
 
 export default function Configuration({ price }) {
@@ -44,11 +44,11 @@ export default function Configuration({ price }) {
     <section id="configuration">
       <div className="container">
         <div className="text-center">
-          <h2>конфигуратор</h2>
+          <h2>Configure your sofa</h2>
           <span className="text-main small-text text-black up-case">
-            Индивидуальность в каждом модуле: создайте свой идеальный
+            Make each module your own and create your ideal
             <br />
-            диван с нашей модульной системой
+            sofa with our modular system
           </span>
         </div>
         <div className="section-layout">

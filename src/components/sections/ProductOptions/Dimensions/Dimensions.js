@@ -1,5 +1,6 @@
 
 import DimensionItems from './DimensionItems';
+import { translateCatalogLabel } from '../../../../data/catalogEnglish';
 
 export default function Dimensions({ dimensions }) {
     return (
@@ -16,7 +17,7 @@ export default function Dimensions({ dimensions }) {
                 return (
                     <DimensionItems
                         key={i}
-                        label={"размер"}
+                        label={"Size"}
                         values={values}
                         height={height}
                     />
@@ -27,7 +28,7 @@ export default function Dimensions({ dimensions }) {
                 return (
                     <DimensionItems
                         key={i}
-                        label={key}
+                        label={translateCatalogLabel(key)}
                         values={values}
                     />
                 );

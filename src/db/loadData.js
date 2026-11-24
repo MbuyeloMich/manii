@@ -9,12 +9,16 @@ import {
   equalTo,
 } from "firebase/database";
 import { database } from "./firebaseConfig";
+import { getLocalData, getLocalItem, getLocalLength } from "./localData";
 
 async function loadData([path, page, count]) {
-   
-  if ((!path, !page, !count)) {
+  if (!path || !Number.isInteger(page) || !Number.isInteger(count) || count < 1) {
     throw new Error("An unexpected error occurred");
   }
+  if (!database) {
+    return getLocalData(path, page, count);
+  }
+
   const startPage = (page - 1) * count;
   try {
     const dbRef = ref(database, path);
@@ -44,6 +48,10 @@ async function loadData([path, page, count]) {
 export default loadData;
 
 export async function getLength([path]) {
+  if (!database) {
+    return getLocalLength(path.replace("catalog/", ""));
+  }
+
   try {
     const dbRef = ref(database, path.replace("catalog/", ""));
 
@@ -60,6 +68,10 @@ export async function getLength([path]) {
 }
 
 export async function getReviewsCount() {
+  if (!database) {
+    return [];
+  }
+
   try {
     const dbRef = ref(database, "reviews");
 
@@ -76,7 +88,10 @@ export async function getReviewsCount() {
 }
 
 export async function getItem([id, dbName]) {
- 
+  if (!database) {
+    return getLocalItem(id, dbName);
+  }
+
   try {
     const dbRef = ref(database, dbName);
     const q = query(dbRef, orderByChild("id"), equalTo(id));

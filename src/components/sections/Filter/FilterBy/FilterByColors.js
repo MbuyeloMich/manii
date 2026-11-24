@@ -9,7 +9,7 @@ export default function FilterByColors() {
 
         <div className="colors-filter xxsmall-text text-main text-black">
             <Accordion
-                headline="цвет"
+                headline="Color"
                 dataLength={8}
                 elHeight={20}
                 isOpen={true}

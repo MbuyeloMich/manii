@@ -37,10 +37,10 @@ export default function News() {
       <div className="container" >
         <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
           <Link className="text-gray" to={'/'}>
-            Главная
+            Home
           </Link>
           <span>/</span>
-          <span>новости</span>
+          <span>News</span>
         </div>
         <NewsFilter />
         <NewsDisplay

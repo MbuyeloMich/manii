@@ -44,7 +44,7 @@ export default function CartContent({
                     exit={{ height: 0 }}
                     className="cart-content"
                 >
-                    <h5 className="text-black-secondary">итоговая сумма</h5>
+                    <h5 className="text-black-secondary">Order total</h5>
                     <CartItems
                         ref={elRef}
                         onMouseEnter={disableScroll}

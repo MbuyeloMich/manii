@@ -5,10 +5,12 @@ import CatalogCollections from '../../../components/sections/CatalogCollections/
 import Intro from '../../../components/sections/Intro/Intro'
 import catalog from '../../../data/catalog'
 import NoFound from '../../NoFound/NoFound'
+import { getCatalogEnglish } from '../../../data/catalogEnglish'
 export default function CatalogSections({ path }) {
 
 
     const pathExists = ['outdoor', 'frameless', 'curtains', 'bedsheets', 'beds', 'decor', "sofas", "poufs", "chairs", "armchairs"].includes(path)
+    const englishCopy = getCatalogEnglish(path)
 
 
     return (
@@ -16,10 +18,10 @@ export default function CatalogSections({ path }) {
         pathExists ? <>
             <Intro
                 id={catalog[path].id}
-                headline={catalog[path].headline}
+                headline={englishCopy.headline}
                 bg={catalog[path].bg}
                 posY={catalog[path].posY}
-                description={catalog[path].description}
+                description={englishCopy.description}
             />
             <CatalogCollections path={path} />
             <Filter path={path} />

@@ -22,7 +22,7 @@ export default function Article(props) {
           <Link
             to={`/news/article/${data.title.toLowerCase().replace(/\s+/g, '_')}?id=${data.id}`} >
 
-            <span className='text-main xxxsmall-text text-gray'>Статья</span>
+            <span className='text-main xxxsmall-text text-gray'>Article</span>
             <span className='text-main xxsmall-text text-black up-case'>
               <b>
                 {data && data.title.split(' ').slice(0, 5).join(' ')}...

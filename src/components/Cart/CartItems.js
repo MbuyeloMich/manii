@@ -41,7 +41,7 @@ const CartItems = forwardRef((props, ref) => {
                 key={'no-found'}
                 style={{ height: '470px', margin: '30px 0' }}>
                 <h5 className="text-center">
-                    ваша карта пуста
+                    Your cart is empty
                 </h5>
             </SmoothAppearance>
             }

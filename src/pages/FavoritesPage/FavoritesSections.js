@@ -44,7 +44,7 @@ export default function FavoritesSections() {
                                             e.stopPropagation()
                                             handleAddToCart(e, null, { ...el, quantity: el.quantity })
                                         }}>
-                                            добавить в корзину
+                                            Add to cart
                                         </MainButton>
 
                                     </CartWrapper>
@@ -53,7 +53,7 @@ export default function FavoritesSections() {
                         </SmoothAppearance> : <SmoothAppearance
                             key={'no-found'}>
                             <h5 className="text-center">
-                                у вас нет избранных товаров
+                                You don't have any saved favorites yet.
                             </h5>
                         </SmoothAppearance>}
                     </AnimatePresence>

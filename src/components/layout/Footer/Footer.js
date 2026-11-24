@@ -17,7 +17,7 @@ export default function Footer() {
       <div className='rights'>
         <div className='container'>
           <p className='xxxsmall-text text-main'>
-            {new Date().getFullYear()} все права защищены
+            {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
       </div>

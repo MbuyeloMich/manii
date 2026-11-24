@@ -32,27 +32,27 @@ export default function Navigation({ menu, setMenu }) {
           <NestedList setMenu={setMenu} menu={menu} />
           <li>
             <NavLink
-              to={'news'}>новости</NavLink>
+              to={'news'}>News</NavLink>
           </li>
           <li>
             <NavLink
-              to={'about'}>о нас</NavLink>
+              to={'about'}>About</NavLink>
           </li>
           <li>
             <NavLink
               to={'reviews'}
-            >отзывы</NavLink>
+            >Reviews</NavLink>
           </li>
           <li>
             <NavLink
               to={'contacts'}
-            >контакты</NavLink>
+            >Contact</NavLink>
           </li>
         </ul>
       </nav>
       <div className='column gap-5'>
-        <a href="tel:+79160257790" className='text-main text-black xxxsmall-text'>+7 (916) 025-77-90</a>
-        <a href="tel:+74951501091" className='text-main text-black xxxsmall-text'>+7 (495) 150-10-91</a>
+        <a href="tel:+27110000000" className='text-main text-black xxxsmall-text'>+27 11 000 0000</a>
+        <a href="tel:+27100000000" className='text-main text-black xxxsmall-text'>+27 10 000 0000</a>
       </div>
     </div>
   );

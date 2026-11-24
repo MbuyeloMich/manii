@@ -15,10 +15,10 @@ export default function Bought() {
 
                 </div>
                 <div className='self-end-y'>
-                    <h2 className='text-black-secondary'>Спасибо за заказ </h2>
+                    <h2 className='text-black-secondary'>Thank you for your order</h2>
                     <p className='text-main small-text text-black-secondary'>
-                        Вы всегда можете отследить свой заказ в <span>
-                            личном кабинете
+                        You can track your order at any time in your <span>
+                            account
                         </span>
                     </p>
                 </div>

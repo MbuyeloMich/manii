@@ -41,7 +41,7 @@ export default function ReviewsHeader({ reviewsCount }) {
                     </div>
                 </div>
                 <span className='xxsmall-text text-main'>
-                    На основе {reviewsCount.length} отзывов
+                    Based on {reviewsCount.length} reviews
                 </span>
             </div>
             <div className='row wrap gap-10'>

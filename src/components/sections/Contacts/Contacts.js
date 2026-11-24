@@ -12,24 +12,24 @@ export default function Contacts() {
     return (
         <section id='contacts'>
             <div className='text-center'>
-                <h2>контакты</h2>
-                <span className='small-text text-main text-black up-case'>Мы открыты к сотрудничеству и предложениям</span>
+                <h2>Contact</h2>
+                <span className='small-text text-main text-black up-case'>We welcome collaborations and proposals</span>
             </div>
             <div className='section-layout'>
                 <div className='column s-between'>
                     <div>
                         <p className='text-main text-black xsmall-text up-case'>
-                            Свяжитесь с нами, если у вас возникли вопросы:
+                            Get in touch if you have any questions:
                         </p>
                         <div className='column gap-20'>
                            <Phone/>
                             <div className='row start-y gap-15'>
                                 <img src={location} alt='location-icon' />
                                 <span className='text-main text-black xxsmall-text'>
-                                    Москва, Сельскохозяйственная улица, д. 12А
+                                    Sandton, Johannesburg, Gauteng, South Africa
                                     <br />
                                     <b>
-                                        {`(обязательно предупредите нас перед приездом)`}
+                                        {`(Please let us know before your visit.)`}
                                     </b>
                                 </span>
                             </div>
@@ -38,7 +38,7 @@ export default function Contacts() {
                     </div>
                     <div>
                         <p className='text-main text-black xsmall-text up-case'>
-                            Наше представительство в Краснодарском крае, г. Сочи:
+                            Our Johannesburg office:
                         </p>
                         <div className='column gap-20'>
                             <Phone/>

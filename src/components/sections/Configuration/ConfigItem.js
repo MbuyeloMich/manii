@@ -1,5 +1,6 @@
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { formatZar } from "../../../utils/currency";
 
 export default function ConfigItem({ item, index, updateQuantity }) {
     return (
@@ -15,7 +16,7 @@ export default function ConfigItem({ item, index, updateQuantity }) {
             </div>
             <span className="small-text text-main text-black up-case">{item.type}</span>
             <span className="xsmall-text text-main text-gray">
-                {item.price.toLocaleString("ru-RU")} руб
+                {formatZar(item.price)}
             </span>
             <div className="config-adjustment grid-3 xsmall-text text-main text-black">
                 <button className="center-gr" onClick={() => updateQuantity(index, -1)}>

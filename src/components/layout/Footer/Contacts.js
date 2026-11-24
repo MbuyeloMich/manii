@@ -9,23 +9,23 @@ export default function Contacts() {
             <div className='row start-y gap-15'>
                 <img src={phone} alt='phone-icon' style={{ marginTop: '4px' }} />
                 <div>
-                    <a href="tel:+79160257790" className='text-main text-light xxsmall-text'>+7 (916) 025-77-90</a>
-                    <br />  <a href="tel:+74951501091" className='text-main text-light xxsmall-text'>+7 (495) 150-10-91</a>
+                    <a href="tel:+27110000000" className='text-main text-light xxsmall-text'>+27 11 000 0000</a>
+                    <br />  <a href="tel:+27100000000" className='text-main text-light xxsmall-text'>+27 10 000 0000</a>
                 </div>
             </div>
             <div className='row start-y gap-15'>
                 <img src={location} alt='location-icon' />
                 <span className='text-main text-light xxsmall-text'>
-                    Москва,
-                    <br /> Сельскохозяйственная улица,
-                    <br /> д. 12А
+                    Sandton,
+                    <br /> Johannesburg,
+                    <br /> Gauteng, South Africa
                 </span>
             </div>
             <div className='row center-y gap-15'>
                 <img src={mail} alt='mail-icon' />
                 <a className='text-main text-light xxsmall-text'
-                    href="mailto:info@jamni.ru">
-                    mailto:info@jamni.ru</a>
+                    href="mailto:info@mani.ru">
+                    mailto:info@mani.ru</a>
             </div>
         </div>
     )

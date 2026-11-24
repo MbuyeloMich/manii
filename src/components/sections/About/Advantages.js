@@ -12,10 +12,10 @@ import Observer from '../../scroll/Observer'
 
 export default function Advantages() {
     const data = [
-        { name: "3D-модель<br/>мебели", icon: icon1, num: num1 },
-        { name: "гарантия качества<br/>и сроков", icon: icon2, num: num2 },
-        { name: "индивидуальный<br/>заказ", icon: icon3, num: num3 },
-        { name: "Доставка<br/>и монтаж", icon: icon4, num: num4 }
+        { name: "3D furniture<br/>models", icon: icon1, num: num1 },
+        { name: "Quality and<br/>on-time guarantee", icon: icon2, num: num2 },
+        { name: "Made-to-order<br/>furniture", icon: icon3, num: num3 },
+        { name: "Delivery<br/>and installation", icon: icon4, num: num4 }
     ];
     return (
         <div className='row center-x'>

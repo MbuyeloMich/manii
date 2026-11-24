@@ -15,6 +15,13 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const database = getDatabase(app)
+const hasFirebaseConfig = Boolean(
+  firebaseConfig.apiKey &&
+    firebaseConfig.databaseURL &&
+    firebaseConfig.projectId &&
+    firebaseConfig.appId
+);
+
+export const database = hasFirebaseConfig
+  ? getDatabase(initializeApp(firebaseConfig))
+  : null;

@@ -25,7 +25,7 @@ export default function CategoryList({ categories, currentCategory, onCategorySe
                             className="text-black-secondary"
                         ></h4>
                         <span className="xsmall-text text-main text-black-secondary">
-                            {el.quantity} наименований
+                            {el.quantity} items
                         </span>
                     </div>
                 </div>

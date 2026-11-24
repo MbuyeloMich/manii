@@ -8,9 +8,9 @@ function NewsSections() {
         bg={"https://images.pexels.com/photos/25182965/pexels-photo-25182965/free-photo-of-flowers-in-vase-on-table.jpeg"}
         id="news-intro"
         posY={"50%"}
-        headline="новости"
+        headline="News"
         description=
-        "Свежие тренды и вдохновение: <br/> последние новости из мира мебели"
+        "Fresh trends and inspiration: <br/> the latest news from the world of furniture"
 
       />
       <News />

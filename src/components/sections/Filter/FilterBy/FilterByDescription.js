@@ -6,9 +6,9 @@ export default function FilterByDescription({ headline }) {
 
   const filterItems = [
     { label: headline, value: "" },
-    { label: "скидки", value: "discount" },
-    { label: "новинки", value: "isNew" },
-    { label: "бестселлеры", value: "bestseller" },
+    { label: "On sale", value: "discount" },
+    { label: "New arrivals", value: "isNew" },
+    { label: "Bestsellers", value: "bestseller" },
   ];
 
   return (

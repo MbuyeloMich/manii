@@ -20,7 +20,7 @@ export default function Cart({ setIsChecked, isChecked }) {
                         name="bycard"
                         id="bycard"
                     >
-                        Оплата банковской картой
+                        Pay by card
                     </Checkbox>
                 </div>
                 <div className='row center-y gap-5'>
@@ -34,17 +34,17 @@ export default function Cart({ setIsChecked, isChecked }) {
             </div>
             <div className='cart-data'>
                 <span className="text-main xxsmall-text text-gray">
-                    Номер карты
+                    Card number
                 </span>
                 <CartCells cells={4} subCells={4} name="cartNums" />
                 <span className="text-main xxsmall-text text-gray">
-                    Имя владельца карты
+                    Cardholder name
                 </span>
-                <Input type="text" name="name" placeholder="Имя владельца" />
+                <Input type="text" name="name" placeholder="Cardholder name" />
                 <div className='row s-between'>
                     <div>
                         <span className="text-main xxsmall-text text-gray">
-                            Действует до
+                            Expires
                         </span>
                         <div className='row center-y gap-5'>
 

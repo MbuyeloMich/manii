@@ -5,20 +5,12 @@ export default function ProjectHeader() {
     return (
         <div className="row center-x">
             <div className="text-center">
-                <AnimatedText text={"Воплотим ваш проект в уникальную мебель"} as="big-heading" center={true}/>
-                {/* <h2>Воплотим ваш проект в уникальную мебель</h2> */}
+                <AnimatedText text={"Let's bring your furniture project to life"} as="big-heading" center={true}/>
                 <p className="small-text text-main text-black up-case">
-                    Мы открыты к сотрудничеству и предложениям
+                    We welcome collaborations and new ideas
                 </p>
                 <p className="xsmall-text text-main text-black">
-                    Команда Jamni продолжает работать с профессионалами! Работать с
-                    архитекторами, дизайнерами и уникальными проектами — наша страсть,
-                    давайте делать это вместе! Мы всегда готовы встретиться с вами в
-                    Шоу Руме, подобрать и предоставить материалы, дать доступ к
-                    коллекции оцифрованных моделей. Если у вас есть индивидуальный
-                    запрос, проект или необходимо найти и реализовать нестандартное
-                    решение для вашего дома или сада, мы с удовольствием вам с этим
-                    поможем.
+                    The Mani team loves working with architects, designers and creative professionals. We would be delighted to collaborate. Visit our showroom to explore materials and access our digital model collection. If you have a custom brief or need a distinctive solution for your home or garden, we would love to help.
                 </p>
                 <div className="arrow">
                     <img src={arrow} alt="arrow" />

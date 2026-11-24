@@ -12,25 +12,25 @@ export default function Slider() {
 
     const slideData = [{
         image: img1,
-        name: 'ДИВАНЫ И КРЕСЛА ЧЕСТЕРФИЛД',
-        description: 'Как использовать традиционную мягкую мебель при оформлении интерьеров в разных стилях.'
+        name: 'CHESTERFIELD SOFAS AND ARMCHAIRS',
+        description: 'How to style traditional upholstered furniture in a range of interiors.'
     }, {
         image: img2,
 
-        name: "Jamni на HELPER'S BAZAR",
-        description: "Погрузитесь в этот день вместе с нами и нашей мебелью."
+        name: "Mani at HELPER'S BAZAAR",
+        description: "Revisit the day with us and our furniture."
     }, {
         image: img3,
-        name: `Эфиры передачи "Дачный ответ" с нашей мебелью`,
-        description: "Иногда героями передач становятся изделия из нашей стандартной коллекции, а иногда нам выпадает большая честь – изготавливать мебель по эксклюзивным проектам авторов!."
+        name: `The "Country House Makeover" show featuring our furniture`,
+        description: "Sometimes our standard collection takes the spotlight; other times, we have the privilege of making furniture to a designer's unique brief."
     }, {
         image: img4,
-        name: "фото с нашей мебелью в интерьерах покупателей",
-        description: "Подборка фото от наших покупателей."
+        name: "Our furniture in customers' homes",
+        description: "A selection of photos shared by our customers."
     }, {
         image: img5,
-        name: "Как устроены наши кровати",
-        description: "Отвечаем на ваши вопросы о наших кроватях."
+        name: "How our beds are made",
+        description: "Answers to your questions about our beds."
     },]
 
     const [transformIndex, setTransformIndex] = useState(0)

@@ -10,8 +10,7 @@ export default function Contact() {
       <div className="row center-x">
         <div className="center-y gap-50">
           <p className="xsmall-text text-main text-black up-case text-center">
-            Если у вас, как у дизайнера,уже есть готовый проект и вы ищете
-            возможность его реализации, обратитесь к нам
+            Are you a designer with a project ready to bring to life? Get in touch with us.
           </p>
           <div className="row center-y center-x gap-50">
             <div className="arrow-left">
@@ -28,8 +27,7 @@ export default function Contact() {
             </div>
           </div>
           <p className="xsmall-text text-main text-black up-case text-center">
-            Если вы хотите заказатьдизайн-проект, мы с удовольствием поможем вам
-            связаться с профессиональным дизайнером для сотрудничества
+            Looking for an interior design project? We would be happy to connect you with a professional designer.
           </p>
         </div>
       </div>

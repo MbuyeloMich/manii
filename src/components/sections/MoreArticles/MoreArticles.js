@@ -25,8 +25,8 @@ export default function MoreArticles() {
         <section id='more-articles'>
             <div className='container'>
                 <div className='text-center'>
-                    <h2>еще статьи</h2>
-                    <span className='small-text text-main text-black up-case'>вам может понравиться</span>
+                    <h2>More articles</h2>
+                    <span className='small-text text-main text-black up-case'>You might also like</span>
                 </div>
                 <AnimatePresence mode='wait'>
                     {error ? (

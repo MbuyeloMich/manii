@@ -3,14 +3,13 @@ export default function ArticleHelp() {
     <>
       <div style={{ "--area": "j" }}>
         <span className="xsmall-text text-main up-case text-black-secondary">
-          помощь
+          Need help?
         </span>
       </div>
       <div style={{ "--area": "k" }}>
         <p className="xsmall-text text-main text-black-secondary">
-          Если у вас возникли вопросы по уходу за вашей мягкой мебелью -
-          напишите нам на почту info@jamni.ru и вас проконсультирует наш
-          технолог.
+          If you have questions about caring for your upholstered furniture,
+          email us at info@mani.ru and our furniture specialist will be happy to help.
         </p>
       </div>
     </>

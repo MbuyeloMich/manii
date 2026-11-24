@@ -4,11 +4,11 @@ export default function NewsFilter() {
   const { handleSearchParams, resetFilter, allFilterParams } = useFilter("tag");
 
   const filterItems = [
-    { label: "все новости", value: "" },
-    { label: "тренды", value: "тренды" },
-    { label: "вдохновение", value: "вдохновение" },
-    { label: "обзоры", value: "обзоры" },
-    { label: "технологии", value: "технологии" },
+    { label: "All news", value: "" },
+    { label: "Trends", value: "тренды" },
+    { label: "Inspiration", value: "вдохновение" },
+    { label: "Reviews", value: "обзоры" },
+    { label: "Technology", value: "технологии" },
   ];
 
   return (

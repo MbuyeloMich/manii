@@ -44,17 +44,17 @@ export default function Payment({ setActiveTab, setIsBought }) {
                 <div className="row center-y s-between wrap gap-10">
                     <div className="row center-y wrap gap-10">
                         <span className="xxsmall-text text-main text-black-secondary up-case">
-                            <b>доставка</b>
+                            <b>Delivery</b>
                         </span>
                         <span className="xsmall-text text-main text-black" style={{ textTransform: 'capitalize' }}>
-                            {forms.deliveryForm.formData.deliveryType === "delivery" ? 'Самовывоз' : 'Курьер'}
+                            {forms.deliveryForm.formData.deliveryType === "pickup" ? "Pick-up" : "Courier delivery"}
                         </span>
                     </div>
                     <span
                         className="edit xxsmall-text text-main text-gray"
                         onClick={() => setActiveTab("delivery")}
                     >
-                        изменить
+                        Edit
                     </span>
                 </div>
             </DeliveryOutput>
@@ -66,7 +66,7 @@ export default function Payment({ setActiveTab, setIsBought }) {
             >
 
                 <span className="text-main xsmall-text text-black-secondary up-case">
-                    оплата
+                    Payment
                 </span>
                 <Cart isChecked={isChecked} setIsChecked={setIsChecked} />
                 <div className="row center-y gap-10">
@@ -79,11 +79,11 @@ export default function Payment({ setActiveTab, setIsBought }) {
                         name="onspot"
                         id="onspot"
                     >
-                        Оплата при получении
+                        Pay on delivery
                     </Checkbox>
                 </div>
                 <div className='line'></div>
-                <AnimButton type="submit">оплатить</AnimButton>
+                <AnimButton type="submit">Pay now</AnimButton>
             </form>
             <div className="row center-x">
                 <button
@@ -99,7 +99,7 @@ export default function Payment({ setActiveTab, setIsBought }) {
                     className="row center-y gap-15 xsmall-text text-main text-black"
                 >
                     <img src={arrowLeft} alt="arrow-left" />
-                    Вернуться к доставке
+                    Back to delivery
                 </button>
             </div>
         </SmoothAppearance >

@@ -1,6 +1,7 @@
 import React, { memo } from "react";
  import trashIcon from "../../../assets/icons/bag.svg";
   import { LazyLoadImage } from "react-lazy-load-image-component";
+import { formatZar } from "../../../utils/currency";
   
 function CartItem({
   product,
@@ -29,7 +30,7 @@ function CartItem({
               {product.product.split(" ")[1]} {product.name}
             </h6>
             <span className="xsmall-text text-main text-black">
-              {(product.price * product.quantity).toLocaleString("ru-RU")} руб
+              {formatZar(product.price * product.quantity)}
             </span>
           </div>
           <div className="cart-item-quantity text-black-secondary grid-3 xsmall-text text-main">

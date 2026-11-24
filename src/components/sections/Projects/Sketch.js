@@ -14,16 +14,16 @@ export default function Sketch() {
         </div>
         <div className='column center-x gap-40 text-center'>
 
-          <AnimatedText text={'Воплотим ваш проект в уникальную мебель'} as={'middle-heading'} center={true} />
+          <AnimatedText text={"Let's bring your furniture project to life"} as={'middle-heading'} center={true} />
 
 
           <p className='xsmall-text text-main text-black'>
-            Команда Jamni продолжает работать с профессионалами! Работать с архитекторами, дизайнерами и уникальными проектами — наша страсть, давайте делать это вместе! Мы всегда готовы встретиться с вами в Шоу Руме, подобрать и предоставить материалы, дать доступ к коллекции оцифрованных моделей.
+            The Mani team loves working with architects, designers and creative professionals. We would be delighted to collaborate. Visit our showroom to explore materials and access our digital model collection.
           </p>
           <p className='xsmall-text text-main text-black'>
-            Если у вас есть индивидуальный запрос, проект <br /> или необходимо найти и реализовать нестандартное решение для вашего дома или  сада <span>—</span>
+            Have a custom brief or need a distinctive solution for your home or garden? <span>—</span>
             <Link className='xsmall-text text-main text-black'>
-              вам сюда
+              Start here
             </Link>
           </p>
         </div>

@@ -12,17 +12,17 @@ export default function Form() {
     >
       <div className="row gap-15">
         <div className="column gap-10">
-          <Input type="text" placeholder="Имя" name="name" />
-          <Input type="tel" placeholder="Телефон" name="phone" />
-          <Input type="email" placeholder="Почта" name="email" />
+          <Input type="text" placeholder="Name" name="name" />
+          <Input type="tel" placeholder="Phone" name="phone" />
+          <Input type="email" placeholder="Email" name="email" />
         </div>
         <div className="column gap-10">
-          <Input type="text" placeholder="Ссылка на сайт / соц. сети" name="social"/>
-          <Input tag={"textarea"} placeholder="Сообщение" name="message"/>
+          <Input type="text" placeholder="Website / social media link" name="social"/>
+          <Input tag={"textarea"} placeholder="Message" name="message"/>
         </div>
       </div>
       <AnimButton type="submit">
-        <img src={mailIcon} alt="mail" /> отправить
+        <img src={mailIcon} alt="mail" /> Send
       </AnimButton>
     </FormWrapper>
   );

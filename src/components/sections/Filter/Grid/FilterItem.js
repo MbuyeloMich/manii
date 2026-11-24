@@ -1,6 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import AddToFav from "../../../ui/buttons/AddToFav/AddToFav";
 import { Link } from "react-router-dom";
+import { formatZar } from "../../../../utils/currency";
 export default function FilterItem({ item }) {
  
 
@@ -36,7 +37,7 @@ export default function FilterItem({ item }) {
         {item.name}
       </span>
       <span className="xxxsmall-text text-main">
-        {item.price.toLocaleString("ru-RU")} руб.
+        {formatZar(item.price)}
       </span>
       <div className="palette row gap-10">
         {item.colors.map((el, i) => {

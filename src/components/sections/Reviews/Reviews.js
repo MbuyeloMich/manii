@@ -35,10 +35,10 @@ export default function Reviews() {
             <div className="container" >
                 <div className='row gap-10 xxxsmall-text text-main text-black up-case'>
                     <Link className='text-gray' to={'/'}>
-                        Главная
+                        Home
                     </Link>
                     <span>/</span>
-                    <span>отзывы</span>
+                    <span>Reviews</span>
                 </div>
                 {reviewsCount && <ReviewsHeader reviewsCount={reviewsCount} />}
                 <ReviewsDisplay

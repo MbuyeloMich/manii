@@ -23,7 +23,7 @@ import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 
 function App() {
   const location = useLocation();
-  const [renderApp, setRenderApp] = useState(sessionStorage.getItem('animationCompleted') || document.referrer.includes('jamni'));
+  const [renderApp, setRenderApp] = useState(sessionStorage.getItem('animationCompleted') || document.referrer.includes('mani'));
  
   return (
     <>

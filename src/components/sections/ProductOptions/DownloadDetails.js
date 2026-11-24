@@ -11,7 +11,7 @@ export default function DownloadDetails({ catalog }) {
                   <img src={cube} alt="cube" />
               </div>
               <span className="xsmall-text text-main text-black-secondary">
-                  Собрать <br /> самому
+                  Build it <br /> yourself
               </span>
           </div>}
           <div className="row center-y gap-15">
@@ -19,7 +19,7 @@ export default function DownloadDetails({ catalog }) {
                   <img src={model} alt="model" />
               </div>
               <span className="xsmall-text text-main text-black-secondary">
-                  Посмотреть {construct && <br />} 3D-модель
+                  View the {construct && <br />} 3D model
               </span>
           </div>
           
@@ -28,7 +28,7 @@ export default function DownloadDetails({ catalog }) {
                   <img src={download} alt="download" />
               </div>
               <span className="xsmall-text text-main text-black-secondary">
-                  Скачать {construct && <br />} 3D-модель
+                  Download the {construct && <br />} 3D model
               </span>
           </div>
       </div>

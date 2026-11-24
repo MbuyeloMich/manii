@@ -17,16 +17,16 @@ export default function BuildSet() {
   const { handleAddToCart } = useProductActions()
   const randomCatalogs = useMemo(() => {
     const catalogs = [
-      { name: "outdoor", heading: "уличная <br/> мебель", preview: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0216/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg", quantity: 90 },
-      { name: "frameless", heading: "бескаркасная <br/> мебель", preview: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0010/boucle-twill-gravel-modern-lounger-xl.jpg", quantity: 90 },
-      { name: "bedsheets", heading: "постельное <br/> белье", preview: "https://cb.scene7.com/is/image/Crate/TateFullBedWnslwCharclSSS20_1x1?$web_pdp_main_carousel_med$", quantity: 90 },
-      { name: "curtains", heading: "шторы", preview: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202501/0040/custom-emery-linen-sheer-drape-white-xl.jpg", quantity: 90 },
-      { name: "beds", heading: "кровати", preview: "https://cb.scene7.com/is/image/Crate/CambriaTuftedQnBedSOSSF24?$web_pdp_main_carousel_med$", quantity: 90 },
-      { name: "decor", heading: "декор", preview: "https://i.ibb.co/Ks8KTFq/img-1.jpg", quantity: 79 },
-      { name: "sofas", heading: "диваны", preview: "https://i.ibb.co/dbKNMTH/img-10.jpg", quantity: 90 },
-      { name: "poufs", heading: "пуфы <br/> и банкетки", preview: "https://cb.scene7.com/is/image/Crate/TexturedPldPoufPmIvr18inSSF23?$web_pdp_main_carousel_high$", quantity: 76 },
-      { name: "chairs", heading: "стулья", preview: "https://cb.scene7.com/is/image/Crate/OjaiUphWFAcntChrBC3QSSS22_3D?$web_pdp_main_carousel_med$", quantity: 90 },
-      { name: "armchairs", heading: "кресла", preview: "https://cb.scene7.com/is/image/Crate/LisantAccChairCmBg3QSSS25?$web_pdp_main_carousel_med$", quantity: 90 },
+      { name: "outdoor", heading: "Outdoor <br/> furniture", preview: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202448/0216/tulum-wicker-swivel-outdoor-lounge-chair-xl.jpg", quantity: 90 },
+      { name: "frameless", heading: "Frameless <br/> furniture", preview: "https://assets.ptimgs.com/ptimgs/ab/images/dp/wcm/202441/0010/boucle-twill-gravel-modern-lounger-xl.jpg", quantity: 90 },
+      { name: "bedsheets", heading: "Bed <br/> linen", preview: "https://cb.scene7.com/is/image/Crate/TateFullBedWnslwCharclSSS20_1x1?$web_pdp_main_carousel_med$", quantity: 90 },
+      { name: "curtains", heading: "Curtains", preview: "https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202501/0040/custom-emery-linen-sheer-drape-white-xl.jpg", quantity: 90 },
+      { name: "beds", heading: "Beds", preview: "https://cb.scene7.com/is/image/Crate/CambriaTuftedQnBedSOSSF24?$web_pdp_main_carousel_med$", quantity: 90 },
+      { name: "decor", heading: "Decor", preview: "https://i.ibb.co/Ks8KTFq/img-1.jpg", quantity: 79 },
+      { name: "sofas", heading: "Sofas", preview: "https://i.ibb.co/dbKNMTH/img-10.jpg", quantity: 90 },
+      { name: "poufs", heading: "Poufs <br/> and benches", preview: "https://cb.scene7.com/is/image/Crate/TexturedPldPoufPmIvr18inSSF23?$web_pdp_main_carousel_high$", quantity: 76 },
+      { name: "chairs", heading: "Chairs", preview: "https://cb.scene7.com/is/image/Crate/OjaiUphWFAcntChrBC3QSSS22_3D?$web_pdp_main_carousel_med$", quantity: 90 },
+      { name: "armchairs", heading: "Armchairs", preview: "https://cb.scene7.com/is/image/Crate/LisantAccChairCmBg3QSSS25?$web_pdp_main_carousel_med$", quantity: 90 },
 
 
     ];
@@ -75,9 +75,9 @@ export default function BuildSet() {
     <section id="build-set">
       <div className="container">
         <div className="text-center">
-          <h2>соберите свой комплект</h2>
+          <h2>Build your set</h2>
           <span className="small-text text-main text-black up-case">
-            создайте идеальное пространство: дополните свою <br /> комнату уникальным декором
+            Create your ideal space and complete your <br /> room with unique accents
           </span>
         </div>
         <div className="section-layout">
@@ -102,5 +102,4 @@ export default function BuildSet() {
     </section>
   );
 }
-
 

@@ -22,7 +22,7 @@ function Recommendations() {
         }}
       >
         <span className="xsmall-text text-main text-black up-case">
-          Рекомендации для вас
+          Recommended for you
         </span>
         <img
           style={{ transform: !showRecs ? "rotate(180deg)" : "none" }}

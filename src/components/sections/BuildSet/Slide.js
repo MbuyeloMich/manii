@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import { formatZar } from "../../../utils/currency";
 
 export default function Slide({ el, ...props }) {
 
@@ -26,7 +27,7 @@ export default function Slide({ el, ...props }) {
       </div>
       <span className="small-text text-main text-center text-black up-case">{el.product.split(' ')[1]} {el.name}</span>
       <span className="xsmall-text text-main text-gray">
-        {el.price.toLocaleString("ru-RU")} руб
+        {formatZar(el.price)}
       </span>
       <div className="grid-3 xsmall-text text-main text-black">
         <button className="center-gr" onClick={(e) => {

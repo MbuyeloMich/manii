@@ -36,13 +36,13 @@ export default function Information({ setActiveTab }) {
         data-formkey="infoForm"
       >
         <div className="row center-y s-between">
-          <span className="text-main xsmall-text up-case">Контакт</span>
+          <span className="text-main xsmall-text up-case">Contact</span>
           <p className="text-main xxsmall-text text-gray">
-            У Вас уже есть аккаунт?{" "}
-            <span className="text-black" onClick={() => setAuth('sign-in')}>Авторизоваться</span>
+            Already have an account?{" "}
+            <span className="text-black" onClick={() => setAuth('sign-in')}>Sign in</span>
           </p>
         </div>
-        <Input type="email" name="email" placeholder="Электронная почта" />
+        <Input type="email" name="email" placeholder="Email address" />
         <div className="row gap-10">
           <Checkbox
             checked={subscribe}
@@ -51,24 +51,24 @@ export default function Information({ setActiveTab }) {
             name="subscribe"
             id="subscribe"
           >
-            Присылайте мне электронные письма с новостями и предложениями
+            Email me with news and special offers
           </Checkbox>
         </div>
-        <span className="text-main xsmall-text up-case">Адрес доставки</span>
+        <span className="text-main xsmall-text up-case">Shipping address</span>
         <Selection
           defaultValue={forms?.infoForm?.formData?.country}
           name="country"
-          data={["Россия", "Казахстан", "Беларусь", "другая страна"]}
+          data={["South Africa", "Other country"]}
         />
         <div className="row wrap gap-20">
-          <Input type="text" placeholder="Имя" name="name" />
-          <Input type="text" placeholder="Фамилия" name="surname" />
-          <Input type="text" placeholder="Город" name="city" />
-          <Input type="number" placeholder="Индекс" name="index" />
-          <Input type="text" placeholder="Улица" name="street" />
-          <Input type="number" placeholder="Номер дома" name="homeAddress" />
+          <Input type="text" placeholder="First name" name="name" />
+          <Input type="text" placeholder="Last name" name="surname" />
+          <Input type="text" placeholder="City" name="city" />
+          <Input type="number" placeholder="Postal code" name="index" />
+          <Input type="text" placeholder="Street" name="street" />
+          <Input type="number" placeholder="Street number" name="homeAddress" />
         </div>
-        <Input type="tel" placeholder="Телефон" name="phone" />
+        <Input type="tel" placeholder="Phone" name="phone" />
         <div className="row gap-10">
           <Checkbox
             label={true}
@@ -77,11 +77,11 @@ export default function Information({ setActiveTab }) {
             name="save"
             id={"save"}
           >
-            Сохраните эту информацию для использования в следующий раз
+            Save this information for next time
           </Checkbox>
         </div>
         <div className="line"></div>
-        <AnimButton type="submit">продолжить</AnimButton>
+        <AnimButton type="submit">Continue</AnimButton>
       </form>
     </SmoothAppearance>
   );

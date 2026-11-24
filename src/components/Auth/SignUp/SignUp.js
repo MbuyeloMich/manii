@@ -7,17 +7,17 @@ export default function SignUp({ setAuth }) {
     <FormWrapper formkey={"signinForm"}>
       <div className="text-center">
         <span className="form-heading text-heading text-black up-case">
-          регистрация
+          Create an account
         </span>{" "}
       </div>
       <Input type="email" placeholder="E-mail*" name="email" />
       <p className="xxxsmall-text text-main text-gray">
-        Пароль будет отправлен на указанный адрес электронной почты
+        A password will be sent to the email address you provide.
       </p>
-      <AnimButton type="submit">войти</AnimButton>
+      <AnimButton type="submit">Create account</AnimButton>
       <p className="xxxsmall-text text-main text-gray">
-        У вас уже есть профиль?
-        <span onClick={() => setAuth("sign-in")}> Войти</span>
+        Already have an account?
+        <span onClick={() => setAuth("sign-in")}> Sign in</span>
       </p>
       <CloseButton setAuth={setAuth} />
     </FormWrapper>
