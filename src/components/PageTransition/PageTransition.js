@@ -28,7 +28,7 @@ function PageTransition(Component) {
       });
 
 
-    }, []);
+    }, [scrollbarAccess]);
 
     return (
       <React.Fragment>
