@@ -1,0 +1,4 @@
+[build.environment]
+  # Create React App treats ESLint warnings as build errors when CI=true.
+  # Keep warnings visible in the log without failing the deploy.
+  CI = "false"

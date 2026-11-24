@@ -9,13 +9,13 @@ export default function Socials() {
         <div className='column center-y gap-30'>
             <Link className='logo' to={'/'}><img src={logo} alt='logo' /></Link>
             <div className='footer-socials row gap-25 center-x'>
-                <a className='social' href='#'>
+                <a className='social' href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
                     <img src={instagram} alt='instagram' />
                 </a>
-                <a className='social' href='#'>
+                <a className='social' href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer'>
                     <img src={facebook} alt='facebook' />
                 </a>
-                <a className='social' href='#'>
+                <a className='social' href='https://vk.com/' target='_blank' rel='noopener noreferrer'>
                     <img src={vk} alt='vk' />
                 </a>
             </div>
